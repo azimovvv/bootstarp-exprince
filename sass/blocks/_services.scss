@@ -1,0 +1,231 @@
+.services {
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 200px;
+    overflow: hidden;
+}
+
+.services__list {
+    @include list-unstyled;
+    margin-bottom: 1rem;
+}
+
+.services__item {
+    margin: 0;
+    padding: 0;
+    max-width: 1619px;
+    margin-top: 160px;
+    display: flex;
+    position: relative;
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:nth-child(2n) {
+        flex-direction: row-reverse;
+        &:before {
+            margin-right: 1174px;
+        }
+    }
+
+    &:before {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 445px;
+        height: 445px;
+        top: 0;
+        background-color: #E5ECF4;
+        border-radius: 50%;
+        margin-left: 1174px;
+        content: ('');
+    }
+}
+
+.services__item-heading {
+    margin: 0;
+    padding: 0;
+    width: 445px;
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+    margin-bottom: 24px;
+    margin-top: 66px;
+
+}
+
+.services__item-desc {
+    margin: 0;
+    padding: 0;
+    width: 445px;
+    font-family: 'Lexend Deca';
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    margin-bottom: 54px;
+}
+
+.services__item-img {
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    margin-left: 220px;
+}
+
+.services__item-svg {
+    position: absolute;
+    margin-top: 299px;
+    margin-left: 540px;
+    color: #FCB72B;
+}
+
+.services__item-img--left {
+    margin: 0;
+    padding: 0;
+    margin-right: 220px;
+}
+
+.services__item-svg--left {
+    flex-direction: column-reverse;
+    margin-right: 925px;
+    margin-top: 0;
+}
+
+.services__item-svg--right {
+    margin: 0;
+    padding: 0;
+    margin-left: 920px;
+    margin-top: 85px;
+}
+
+@media only screen and (max-width: 1437px) {
+    .services {
+        transition: 0.5s all;
+        max-width: 768px; 
+        display: flex;
+    } 
+
+    .services__item {
+        display: flex;
+        max-width: 749px;
+        flex-direction: column-reverse;
+
+        &-heading {
+            text-align: center;
+        }
+
+        &-desc {
+            text-align: center;
+            max-width: 100%;
+        }
+
+        &-link {
+            margin-left: 33px;
+        }
+        &-content {
+            margin: 0;
+            padding: 0;
+            max-width: 573px;
+        }
+
+        &-img {
+            margin: 0;
+        }
+
+        &-svg {
+            margin: 0;
+            padding: 0;
+
+            &--left {
+                margin-left: -550px;
+                top: 0;
+            }
+
+            &--top {
+                margin-left: -130px;
+                margin-bottom: 390px;
+            }
+
+            &--right {
+                margin-left: 237px;
+                margin-bottom: 628px;
+            }
+        }
+
+        &:nth-child(2n) {
+            flex-direction: column-reverse;
+
+            &::before {
+                margin-left: -482px;
+            }
+        }
+
+        &:before {
+            margin: 0;
+            padding: 0;
+            margin-left: 482px;    
+        }
+
+    }
+
+    .services__item-link {
+        margin-left: 120px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .services {
+        transition: 0.9s all;
+        max-width: 375px;
+        margin: 0 auto;
+    } 
+
+    .services__item {
+
+        &-heading {
+            max-width: 311px;
+            font-size: 32px;
+        }
+
+        &-desc {
+            max-width: 311px;
+        }
+
+        &:first-child {
+            margin-top: 120px;
+        }
+
+        &-link {
+            margin: 80px;
+        }
+        &-svg {
+
+        &--top {
+            margin-left: 0;
+        }
+        
+        &--left {
+            margin-left: 0;
+            margin-left: -525px;
+        }
+
+        &--right {
+            margin-left: 90px;
+            margin-bottom: 570px;
+        }
+
+        }
+        
+    }
+
+    .services__item-img {
+        width: 311px;
+        height: 311px;
+    }
+}

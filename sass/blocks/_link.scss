@@ -1,0 +1,14 @@
+.link {
+    padding: 14px 39px;
+    background: #FCB72B;
+    font-size: 15px;
+    color: #FFFFFF;
+    @include fontsMon;
+    border: 3px solid transparent;
+
+    &:hover {
+        background-color: #FFFFFF;
+        border: 3px solid #FCB72B;
+        color: #FCB72B;
+    }
+}

@@ -1,0 +1,110 @@
+.sign {
+    background-image: url(../../img/sign.jpg);
+    max-width: 1440px;
+    height: 300px;
+    margin-top: 329px;
+}
+
+.sign__container {
+    display: flex;
+    align-items: center;
+    padding: 102px 0;
+}
+
+.sign__heading {
+    margin: 0;
+    padding: 0;
+    max-width: 415px;
+    height: 96px;
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #FFFFFF;
+}
+
+.sign__content {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+.sign__img {
+    margin: 0;
+    padding: 0;
+    max-width: 159px;
+    height: 56px
+}
+
+.sign__img--with {
+    max-width: 182px;
+}
+
+.sign__link {
+    @include list-unstyled;
+    margin-right: 18px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1437px) {
+    .sign {
+        transition: 0.5s all;
+        max-width: 768px;
+        background-image: url(../../img/signsml.jpg);
+        max-width: 768px;
+        height: 300px;
+        margin-top: 118px;
+    }
+
+    .sign__container {
+        display: block;
+        max-width: 457px;
+        text-align: center;
+        padding: 0;
+        padding-top: 62px;
+    }
+
+    .sign__heading {
+        max-width: 457px;
+    }
+
+    .sign__img {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .sign {
+        position: relative;
+        max-width: 375px;
+        height: 320px;
+        background-image: url(../../img/signsm.jpg);
+    }
+
+    .sign__img {
+        position: absolute;
+        margin-top: 40px;
+        margin-right: 12px;
+    }
+
+    .sign__heading {
+        max-width: 311px;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .sign__container {
+        display: block;
+        max-width: 311px;
+        
+    }
+
+    .sign__img--position {
+        margin-left: -150px;
+    }
+    
+}

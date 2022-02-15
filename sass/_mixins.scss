@@ -1,0 +1,15 @@
+@mixin list-unstyled {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin fontsMon {
+    font-family: 'Space Mono';
+    font-weight: bold;
+}
+
+@mixin fontsLex {
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+}
