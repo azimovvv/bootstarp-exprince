@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Movies catalog</h1>
+        <div class="row">
+            <div class="col-4">
+                <form method="get">
+                    <input class="col-12 mb-3" type="search" placeholder="aven">
+                    <input class="col-12 mb-3" type="number" placeholder="5">
+                    <select class="col-12 mb-3" style="padding: 3px 0;" name="question_type" required aria-label="question">
+                        <option value="question_type" disabled selected>All</option>
+                        <option value="just_question">Just</option>
+                        <option value="no_question">No</option>
+                        <option value="no_question">Some</option>
+                    </select>
+                    <select class="col-12 mb-3" style="padding: 3px 0;" name="question_type" required aria-label="question">
+                        <option value="question_type" disabled selected>Rating (high to low)</option>
+                        <option value="just_question">Just</option>
+                        <option value="no_question">No</option>
+                        <option value="no_question">Some</option>
+                    </select>
+                    <button class="w-100 bg-info rounded" type="submit">Search</button>
+                </form>
+
+                <ul class="p-0">
+                    <li class="border border-info" style="list-style: none;">
+                        <h3>Avengers: Infinity war</h3>
+                        <button class="bg-danger rounded border border-white">Remove</button>
+                    </li>
+                    <li class="border border-info" style="list-style: none;">
+                        <h3>The Avengers</h3>
+                        <button class="bg-danger rounded border border-white">Remove</button>
+                    </li>
+                    <li aria-colcount="border border-info" style="list-style: none;" class="">
+                        <h3>Avengers: Age of Ultron</h3>
+                        <button class="bg-danger rounded border border-white">Remove</button>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <ul class="row col-8 m-0" pX-0 pY-0>
+                <h2>Search rusult</h2>
+                <li style="list-style: none;" class=" col-6 mb-5 ml-0 ">
+                    <img class="img-fluid" src="img/dragon.gif" alt="dragon.gif">
+                    <h3>Avengers: Infinity War</h3>
+                    <p>2015</p>
+                    <p>8.7</p>
+                    <div class="">
+                        <a href="#" class="col-4 btn btn-outline-danger">Watch Trailer</a>
+                        <button style="padding: 6px 0;" class=" col-3 btn btn-outline-primary">More Info</button>
+                        <button class="col-3 btn btn-outline-success">Bookmark</button>
+                    </div>
+                </li>
+                <li style="list-style: none;" class="col-6">
+                    <img class="img-fluid" src="img/dragon.gif" alt="dragon.gif">
+                    <h3>The avengers</h3>
+                    <p>2015</p>
+                    <p>8.1</p>
+                    <div class="">
+                        <a href="#" class="col-4 btn btn-outline-danger">Watch Trailer</a>
+                        <button style="padding: 6px 0;" class=" col-3 btn btn-outline-primary">More Info</button>
+                        <button class="col-3 btn btn-outline-success">Bookmark</button>
+                    </div>
+                </li>
+                <li style="list-style: none;" class="col-6">
+                    <img class="img-fluid" src="img/dragon.gif" alt="dragon.gif">
+                    <h3>Avengers: Age of Ulton</h3>
+                    <p>2015</p>
+                    <p>7.4</p>
+                    
+                    <a href="#" class="col-4 btn btn-outline-danger">Watch Trailer</a>
+                    <button style="padding: 6px 0;" class=" col-3 btn btn-outline-primary">More Info</button>    
+                    <button class="col-3 btn btn-outline-success">Bookmark</button>    
+                    
+                </li>
+
+                <li style="list-style: none;" class="col-6">
+                    <img class="img-fluid" src="img/dragon.gif" alt="dragon.gif">
+                    <h3>Kingdom of Heaven</h3>
+                    <p>2015</p>
+                    <p>7.2</p>
+                    <div class="">
+                        <a href="#" class="col-4  btn btn-outline-danger">Watch Trailer</a>
+                        <button style="padding: 6px 0;" class=" col-3 btn btn-outline-primary">More Info</button>
+                        <button class="col-3 btn btn-outline-success">Bookmark</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
